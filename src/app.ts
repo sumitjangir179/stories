@@ -11,8 +11,10 @@ app.use(requestLogger);
 
 
 import userRouter from '@/routes/user.route.ts';
+import uploadRouter from '@/routes/upload.routes.ts';
 
 app.use('/api/v1/user', userRouter);
+app.use('/api/v1/upload', uploadRouter);
 
 // app.use(errorHandler)
 
